@@ -519,61 +519,61 @@ section {
   background: #f5f8fd;
 }
 
-/* Comparison Section
+/* About Us Section
 --------------------------------*/
-#comparison {
+#about {
   padding: 80px 0;
 }
 
-#comparison .comparison-content {
+#about .about-content {
   padding-top: 40px;
 }
 
-#comparison .comparison-content h2 {
+#about .about-content h2 {
   color: #413e66;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
-#comparison .comparison-content h3 {
+#about .about-content h3 {
   color: #696592;
   font-weight: 400;
   font-size: 22px;
   font-style: italic;
 }
 
-#comparison .comparison-content ul {
+#about .about-content ul {
   list-style: none;
   padding: 0;
 }
 
-#comparison .comparison-content ul li {
+#about .about-content ul li {
   padding-bottom: 10px;
 }
 
-#comparison .comparison-content ul li i {
+#about .about-content ul li i {
   font-size: 20px;
   padding-right: 4px;
   color: #1bb1dc;
 }
 
-#comparison .comparison-img {
+#about .about-img {
   position: relative;
   margin: 30px 30px 30px 30px;
 }
 
-#comparison .comparison-img img {
+#about .about-img img {
   width: 100%;
   border: 8px solid #fff;
   transition: .5s;
 }
 
-#comparison .comparison-img img:hover {
+#about .about-img img:hover {
   width: 100%;
   transform: scale(1.03);
 }
 
-#comparison .comparison-img::before {
+#about .about-img::before {
   position: absolute;
   left: -31px;
   top: -30px;
@@ -585,7 +585,7 @@ section {
   transition: .5s;
 }
 
-#comparison .comparison-img::after {
+#about .about-img::after {
   position: absolute;
   right: -31px;
   bottom: -30px;
@@ -597,13 +597,13 @@ section {
   transition: .5s;
 }
 
-/* Services Section
+/* Visualization Section
 --------------------------------*/
-#services {
+#visualization {
   padding: 60px 0 40px 0;
 }
 
-#services .box {
+#visualization .box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -615,11 +615,11 @@ section {
   text-align: center;
 }
 
-#services .box:hover {
+#visualization .box:hover {
   transform: scale(1.1);
 }
 
-#services .icon {
+#visualization .icon {
   margin: 0 auto 15px auto;
   padding-top: 12px;
   display: inline-block;
@@ -629,31 +629,32 @@ section {
   height: 60px;
 }
 
-#services .icon i {
+#visualization .icon i {
   font-size: 36px;
   line-height: 1;
 }
 
-#services .title {
+#visualization .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-#services .title a {
+#visualization .title a {
   color: #111;
 }
 
-#services .box:hover .title a {
+#visualization .box:hover .title a {
   color: #1bb1dc;
 }
 
-#services .description {
+#visualization .description {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
   text-align: left;
 }
+
 
 /* Why Us Section
 --------------------------------*/
