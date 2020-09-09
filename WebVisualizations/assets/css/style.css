@@ -655,6 +655,41 @@ section {
   text-align: left;
 }
 
+/* Season Ranking Section
+--------------------------------*/
+#sranking {
+  padding: 60px 0 40px 0;
+}
+
+#sranking .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#sranking .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#sranking .title a {
+  color: #111;
+}
+
+#sranking .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
 /* Episode Ranking Section
 --------------------------------*/
 #episode {
@@ -673,25 +708,6 @@ section {
   text-align: center;
 }
 
-/* #episode .box:hover {
-  transform: scale(1.1); */
-}
-
-#episode .icon {
-  margin: 0 auto 15px auto;
-  padding-top: 12px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-
-#episode .icon i {
-  font-size: 36px;
-  line-height: 1;
-}
-
 #episode .title {
   font-weight: 700;
   margin-bottom: 15px;
@@ -702,10 +718,6 @@ section {
   color: #111;
 }
 
-#episode .box:hover .title a {
-  color: #1bb1dc;
-}
-
 #episode .description {
   font-size: 14px;
   line-height: 28px;
@@ -713,6 +725,75 @@ section {
   text-align: left;
 }
 
+/* Episode Box Plot Section
+--------------------------------*/
+#eboxplot {
+  padding: 60px 0 40px 0;
+}
+
+#eboxplot .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#eboxplot .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#eboxplot .title a {
+  color: #111;
+}
+
+#eboxplot .description {
+  font-size: 13px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Character Dialogue Section
+--------------------------------*/
+#cdialogue {
+  padding: 60px 0 40px 0;
+}
+
+#cdialogue .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#cdialogue .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#cdialogue .title a {
+  color: #111;
+}
+
+#cdialogue .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
 
 /* Why Us Section
 --------------------------------*/
@@ -816,6 +897,17 @@ section {
 }
 
 /* Features Section
+--------------------------------*/
+#features {
+  padding: 80px 0;
+}
+
+#features h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* Season Ranking Section
 --------------------------------*/
 #features {
   padding: 80px 0;
