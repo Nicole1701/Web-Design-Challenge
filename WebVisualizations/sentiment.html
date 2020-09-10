@@ -56,25 +56,27 @@
               <li class="drop-down"><a href="rating.html">Rating</a>
               <ul>
                 <li><a href="rating.html">Season Rating</a></li>
-                <li><a href="rating.html#episode">Episode Rankings</a></li>
-                <li><a href="rating.html#sbox">Series Outliers</a></li>
-                <li><a href="rating.html#eboxplot">Episode Outliers</a></li>
+                <li><a href="#episode">Episode Rankings</a></li>
+                <li><a href="#sbox">Series Outliers</a></li>
+                <li><a href="#eboxplot">Episode Outliers</a></li>
               </ul>
-              <li class="drop-down"><a href="dialogue.html">Dialogue</a>
+            <li class="drop-down"><a href="dialogue.html">Dialogue</a>
+              <ul>
+                <li><a href="dialogue.html#odialogue">Overall Dialogue</a></li>
+                <li><a href="dialogue.html#sdialogue">Season Dialogue</a></li>
+                <li><a href="dialogue.html#cdialogue">Character Dialogue</a></li>
+              </ul>
+            <li class="drop-down"><a href="sentiment.html">Sentiment</a>
+              <ul>
+                <li><a href="sentiment.html">Overall Sentiment</a></li>
+                <li><a href="#csentiment">Character Sentiment</a></li>
+              </ul>
+              <li class="drop-down"><a href="wordcloud.html">Word Cloud</a>
                 <ul>
-                  <li><a href="dialogue.html#odialogue">Overall Dialogue</a></li>
-                  <li><a href="dialogue.html#sdialogue">Season Dialogue</a></li>
-                  <li><a href="dialogue.html#cdialogue">Character Dialogue</a></li>
+                  <li><a href="wordcloud.html#ocloud">Overall Word Cloud</a></li>
+                  <li><a href="wordcloud.html#ccloud">Character Word Cloud</a></li>
                 </ul>
-              <li><a href="sentiment.html">Sentiment</a></li>
-              <li><a href="wordcloud.html">Word Cloud</a></li>
-            </ul>
-          </li>
-          <li class="drop-down"><a href="#">Data Sets</a>
-            <ul>
-              <li><a href="ratingsdata.html">Ratings Data</a></li>
-              <li><a href="dialoguedata.html">Dialogue Data</a></li>
-            </ul>
+              </ul>
           </li>
         </ul>
       </nav><!-- .main-nav-->
@@ -112,7 +114,21 @@
           <p>Sentiment tells us how positive or negative a line of text is. Taking in all the dialogue from the series, I was able to apply a polarity score to determine which are the most/leave positive seasons & characters in The Office.</p>
           <p>A perfect positive sentiment is a score of 1, perfect neutral is 0 and perfect negative is -1.</p>
           <p>While overall the seasons of this series were positive, they are not positive by much, with the most positive season of the series coming in at only 0.114. But his makes sense as this is a show that depicts office life, a place many people would rather not be.</p>
-        </div>
+        </div>      
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <a href = "images/character_sentiment.png" target=_blank><img src = "images/character_sentiment.png" class="img-fluid" alt="Character Polarity Ranking"></a>
+          </div>
+  
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
+            <h4>Michael is the most positive character across all seasons of The Office, while Stanley is the most negative.</h4>
+            <p>
+              Rounding out the top spots in polarity are Jim, Ryan, Pam and surprisingly, Toby. It is interesting to see such a much maligned character managing to stay positive compared to his collegues. 
+            </p>
+            <p>
+              Bringing up the rear along with Stanley are Phyllis, Kelly, Angela and Meredith. Given their personalities in the series, none of these are a surrise.
+            </p>
+          </div>
       </div>
     </div>
   </section><!-- End Season Sentiment Section --> 
@@ -123,7 +139,7 @@
 
     <header class="section-header">
       <h3>Sentiment by Character</h3>
-      <p>See below for each characters positivity score for each season.</p>
+      <p>See below for each character's positivity score for each season.</p>
     </header>
 
     <div class="row">
@@ -224,105 +240,14 @@
           <a href = "images/stanley_sentiment.png" target=_blank><img src = "images/stanley_sentiment.png" class="img-fluid" alt="Stanley Sentiment by Season"></a>
         </div>
       </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Creed</h4>
+          <a href = "images/creed_sentiment.png" target=_blank><img src = "images/creed_sentiment.png" class="img-fluid" alt="Creed Sentiment by Season"></a>
+        </div>
+      </div>
   </div>
 </section><!-- End Character Sentiment Section -->
-
-<!-- ======= Season Box Plot Section ======= -->
-<section id="sbox" class="sbox">
-  <div class="container" data-aos="fade-up">
-
-    <div class="row feature-item">
-      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-        <a href = "images/rating_by_season.png" target=_blank><img src = "images/rating_by_season.png" class="img-fluid" alt="The Office Episode Box Plot"></a>
-      </div>
-      <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
-        <h4>There are some outliers in the season ratings.</h4>
-        <p>Most of the episode ratings for each season fall within the quartile range, however there are a few exceptions.</p>
-        <p>It is worth pointing out that while Season 9 is the lowest ranked season, there are three outliers above the quartile range: Finale, A.A.R.M. and Livin the Dream.</p>
-      </div>
-    </div>
-
-  </div>
-</section><!-- End Season Box Plot Section --> 
-
-<!-- ======= Episode Box Plot Section ======= -->
-<section id="eboxplot" class="eboxplot section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <header class="section-header">
-      <h3>Episode Outliers</h3>
-      <p>See below for a closer look of the outliers, if any, for each season.</p>
-    </header>
-
-    <div class="row">
-
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 1</h4>
-          <a href = "images/boxplot_s1.png" target=_blank><img src = "images/boxplot_s1.png" class="img-fluid" alt="Season 1 Episode Box Plot"></a>
-          <p class="description">Season 1 shows no outliers, and the ratings were pretty consistent throughout the season, based on the size of the box.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 2</h4>
-          <a href = "images/boxplot_s2.png" target=_blank><img src = "images/boxplot_s2.png" class="img-fluid" alt="Season 2 Episode Box Plot"></a>
-          <p class="description">Season 2 is also fairly consistent in it's episodes rankings, however the episode "Casino Night", in which the employees of Dunder Mifflin hold a casino charity event in the warehouse, is a notable outlier.</p>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 3</h4>
-          <a href = "images/boxplot_s3.png" target=_blank><img src = "images/boxplot_s3.png" class="img-fluid" alt="Season 3 Episode Box Plot"></a>
-          <p class="description">Season 3 does not have any outliers, and the box size shows there is not a huge varience in the episode ratings across the season.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 4</h4>
-          <a href = "images/boxplot_s4.png" target=_blank><img src = "images/boxplot_s4.png" class="img-fluid" alt="Season 4 Episode Box Plot"></a>
-          <p class="description">Season 4 does not have any outliers and the shorter box shows that the episode ratings were fairly consistent across the season.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 5</h4>
-          <a href = "images/boxplot_s5.png" target=_blank><img src = "images/boxplot_s5.png" class="img-fluid" alt="Season 5 Episode Box Plot"></a>
-          <p class="description">Season 5 received fairly consistent ratings across the season, although there is an outlier for the episode "Stress Relief" in which Dwight stages a fire saftey drill (with real fire) and there is a cameo of Jack Black, Jessica Alba and Cloris Leachman, who star in an illegally downloaded film watched by Andy, Pam and Jim.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 6</h4>
-          <a href = "images/boxplot_s6.png" target=_blank><img src = "images/boxplot_s6.png" class="img-fluid" alt="Season 6 Episode Box Plot"></a>
-          <p class="description">Season 6 has fairly consistent user ratings across the season, although there is an outlier for the episode "The Banker", which is a clip show of part events at Dunder Mifflin.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 7</h4>
-          <a href = "images/boxplot_s7.png" target=_blank><img src = "images/boxplot_s7.png" class="img-fluid" alt="Season 1 Episode Box Plot"></a>
-          <p class="description">Season 7 has more variation in the episode ratings than the rest of the seasons, however, there are no outliers.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 8</h4>
-          <a href = "images/boxplot_s8.png" target=_blank><img src = "images/boxplot_s8.png" class="img-fluid" alt="Season 8 Episode Box Plot"></a>
-          <p class="description">Season 8 is one of the lowest rated seasons of the series and there is an outlier for episode "Get the Girl" where Andy drives down to Florida to win back Erin, and the polarizing character of Nellie shows up and claims Andy's manager position in his absence. This is also the lowest rated episode of the series.</p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <div class="box">
-          <h4 class="title">Season 9</h4>
-          <a href = "images/boxplot_s9.png" target=_blank><img src = "images/boxplot_s9.png" class="img-fluid" alt="Season 9 Episode Box Plot"></a>
-          <p class="description">Season 9 is the lowest rated season of The Office, however it does have 4 outliers (3 higher and 2 lower). The high outliers include the last three episodes: "Finale", "A.A.R.M", and "Livin the Dream". The low outlier is "Here Comes Treble", where Andy invites his old a cappella group from Cornell to perform for Halloween.</p>
-          
-        </div>
-      </div>
-  </div>
-</section><!-- End Episode Box Plot Section -->
 
 
   </main><!-- End #main -->
