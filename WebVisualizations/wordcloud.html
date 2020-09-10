@@ -50,7 +50,16 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="index.html#about">Project</a></li>
           <li><a href="index.html#visualization">Visualizations</a></li>
-          <li><a href="comparison.html">Comparison</a></li>
+          <li class="drop-down"><a href="#">Comparison</a>
+            <ul>
+                  <li><a href="comparison.html#compranking">Ranking Comparison</a></li>
+                  <li><a href="comparison.html#compbox">Outlier Comparison</a></li>
+                  <li><a href="comparison.html#compdialogue">Dialogue Comparison</a></li>
+                  <li><a href="comparison.html#compchardialogue">Character Dialogue Comparison</a></li>
+                  <li><a href="comparison.html#csentiment">Sentiment Comparison</a></li>
+                  <li><a href="comparison.html#compcloud">Word Cloud Comparison</a></li>
+            </ul>
+          </li>
           <li class="drop-down"><a href="#">Plots</a>
             <ul>
               <li class="drop-down"><a href="rating.html">Rating</a>
@@ -114,45 +123,30 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-  <!-- ======= Season Sentiment ======= -->
-  <section id="ssentiment" class="ssentiment">
+  <!-- ======= Series World Cloud ======= -->
+  <section id="ocloud" class="ocloud">
     <div class="container" data-aos="fade-up">
 
       <div class="row feature-item">
         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-          <a href = "images/season_sentiment.png" target=_blank><img src = "images/season_sentiment.png" class="img-fluid" alt="Sentiment Ranking of The Office Seasons"></a>
+          <a href = "images/word_cloud_all.png" target=_blank><img src = "images/word_cloud_all.png" class="img-fluid" alt="Series Word Cloud"></a>
         </div>
         <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
-          <h4>Season 1 is the most positive season of The Office, while season 9 is the most negative.</h4>
-          <p>Sentiment tells us how positive or negative a line of text is. Taking in all the dialogue from the series, I was able to apply a polarity score to determine which are the most/leave positive seasons & characters in The Office.</p>
-          <p>A perfect positive sentiment is a score of 1, perfect neutral is 0 and perfect negative is -1.</p>
-          <p>While overall the seasons of this series were positive, they are not positive by much, with the most positive season of the series coming in at only 0.114. But his makes sense as this is a show that depicts office life, a place many people would rather not be.</p>
+          <h4>"Well", "right" and "think" are the most said words across the entire series.</h4>
+          <p>After removing punctuation and the most commonly used words in the English language (e.g., "I", "a", "the"), a word cloud can be created to find the most used words used throughout the series. It can help find patterns and see if any words are unique to certain characters.</p>
+          <p>The bigger the word, the more often it is repeated in the dialogue.</p>
         </div>      
-        <div class="row feature-item mt-5 pt-5">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <a href = "images/character_sentiment.png" target=_blank><img src = "images/character_sentiment.png" class="img-fluid" alt="Character Polarity Ranking"></a>
-          </div>
-  
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
-            <h4>Michael is the most positive character across all seasons of The Office, while Stanley is the most negative.</h4>
-            <p>
-              Rounding out the top spots in polarity are Jim, Ryan, Pam and surprisingly, Toby. It is interesting to see such a much maligned character managing to stay positive compared to his collegues. 
-            </p>
-            <p>
-              Bringing up the rear along with Stanley are Phyllis, Kelly, Angela and Meredith. Given their personalities in the series, none of these are a surrise.
-            </p>
-          </div>
       </div>
     </div>
-  </section><!-- End Season Sentiment Section --> 
+  </section><!-- End Series Word Cloud Section --> 
 
- <!-- ======= Character Sentiment Section ======= -->
- <section id="csentiment" class="csentiment section-bg">
+ <!-- ======= Character Word Cloud Section ======= -->
+ <section id="ccloud" class="ccloud section-bg">
   <div class="container" data-aos="fade-up">
 
     <header class="section-header">
-      <h3>Sentiment by Character</h3>
-      <p>See below for each character's positivity score for each season.</p>
+      <h3>Word Clouds by Character</h3>
+      <p>See below for each character's most commonly used words throught the entire series.</p>
     </header>
 
     <div class="row">
@@ -160,107 +154,107 @@
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Michael</h4>
-          <a href = "images/michael_sentiment.png" target=_blank><img src = "images/michael_sentiment.png" class="img-fluid" alt="Michael Sentiment by Season"></a>
+          <a href = "images/word_cloud_michael.png" target=_blank><img src = "images/word_cloud_michael.png" class="img-fluid" alt="Michael Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Dwight</h4>
-          <a href = "images/dwight_sentiment.png" target=_blank><img src = "images/dwight_sentiment.png" class="img-fluid" alt="Dwight Sentiment by Season"></a>
+          <a href = "images/word_cloud_dwight.png" target=_blank><img src = "images/word_cloud_dwight.png" class="img-fluid" alt="Dwight Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Jim</h4>
-          <a href = "images/jim_sentiment.png" target=_blank><img src = "images/jim_sentiment.png" class="img-fluid" alt="Jim Sentiment by Season"></a>
+          <a href = "images/word_cloud_jim.png" target=_blank><img src = "images/word_cloud_jim.png" class="img-fluid" alt="Jim Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Pam</h4>
-          <a href = "images/pam_sentiment.png" target=_blank><img src = "images/pam_sentiment.png" class="img-fluid" alt="Pam Sentiment by Season"></a>
+          <a href = "images/word_cloud_pam.png" target=_blank><img src = "images/word_cloud_pam.png" class="img-fluid" alt="Pam Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Andy</h4>
-          <a href = "images/andy_sentiment.png" target=_blank><img src = "images/andy_sentiment.png" class="img-fluid" alt="Andy Sentiment by Season"></a>
+          <a href = "images/word_cloud_andy.png" target=_blank><img src = "images/word_cloud_andy.png" class="img-fluid" alt="Andy Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Angela</h4>
-          <a href = "images/angela_sentiment.png" target=_blank><img src = "images/angela_sentiment.png" class="img-fluid" alt="Angela Sentiment by Season"></a>
+          <a href = "images/word_cloud_angela.png" target=_blank><img src = "images/word_cloud_angela.png" class="img-fluid" alt="Angela Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Kevin</h4>
-          <a href = "images/kevin_sentiment.png" target=_blank><img src = "images/kevin_sentiment.png" class="img-fluid" alt="Kevin Sentiment by Season"></a>
+          <a href = "images/word_cloud_kevin.png" target=_blank><img src = "images/word_cloud_kevin.png" class="img-fluid" alt="Kevin Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Erin</h4>
-          <a href = "images/erin_sentiment.png" target=_blank><img src = "images/erin_sentiment.png" class="img-fluid" alt="Erin Sentiment by Season"></a>
+          <a href = "images/word_cloud_erin.png" target=_blank><img src = "images/word_cloud_erin.png" class="img-fluid" alt="Erin Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Oscar</h4>
-          <a href = "images/oscar_sentiment.png" target=_blank><img src = "images/oscar_sentiment.png" class="img-fluid" alt="Oscar Sentiment by Season"></a>
+          <a href = "images/word_cloud_oscar.png" target=_blank><img src = "images/word_cloud_oscar.png" class="img-fluid" alt="Oscar Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Ryan</h4>
-          <a href = "images/ryan_sentiment.png" target=_blank><img src = "images/ryan_sentiment.png" class="img-fluid" alt="Ryan Sentiment by Season"></a>
+          <a href = "images/word_cloud_ryan.png" target=_blank><img src = "images/word_cloud_ryan.png" class="img-fluid" alt="Ryan Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Darryl</h4>
-          <a href = "images/darryl_sentiment.png" target=_blank><img src = "images/darryl_sentiment.png" class="img-fluid" alt="Darryl Sentiment by Season"></a>
+          <a href = "images/word_cloud_darryl.png" target=_blank><img src = "images/word_cloud_darryl.png" class="img-fluid" alt="Darryl Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Phyllis</h4>
-          <a href = "images/phyllis_sentiment.png" target=_blank><img src = "images/phyllis_sentiment.png" class="img-fluid" alt="Phyllis Sentiment by Season"></a>
+          <a href = "images/word_cloud_phyllis.png" target=_blank><img src = "images/word_cloud_phyllis.png" class="img-fluid" alt="Phyllis Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Kelly</h4>
-          <a href = "images/kelly_sentiment.png" target=_blank><img src = "images/kelly_sentiment.png" class="img-fluid" alt="Kelly Sentiment by Season"></a>
+          <a href = "images/word_cloud_kelly.png" target=_blank><img src = "images/word_cloud_kelly.png" class="img-fluid" alt="Kelly Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Toby</h4>
-          <a href = "images/toby_sentiment.png" target=_blank><img src = "images/toby_sentiment.png" class="img-fluid" alt="Toby Sentiment by Season"></a>
+          <a href = "images/word_cloud_toby.png" target=_blank><img src = "images/word_cloud_toby.png" class="img-fluid" alt="Toby Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Meredith</h4>
-          <a href = "images/meredith_sentiment.png" target=_blank><img src = "images/meredith_sentiment.png" class="img-fluid" alt="Meredith Sentiment by Season"></a>
+          <a href = "images/word_cloud_meredith.png" target=_blank><img src = "images/word_cloud_meredith.png" class="img-fluid" alt="Meredith Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Stanley</h4>
-          <a href = "images/stanley_sentiment.png" target=_blank><img src = "images/stanley_sentiment.png" class="img-fluid" alt="Stanley Sentiment by Season"></a>
+          <a href = "images/word_cloud_stanley.png" target=_blank><img src = "images/word_cloud_stanley.png" class="img-fluid" alt="Stanley Word Cloud"></a>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="box">
           <h4 class="title">Creed</h4>
-          <a href = "images/creed_sentiment.png" target=_blank><img src = "images/creed_sentiment.png" class="img-fluid" alt="Creed Sentiment by Season"></a>
+          <a href = "images/word_cloud_creed.png" target=_blank><img src = "images/word_cloud_creed.png" class="img-fluid" alt="Creed Word Cloud"></a>
         </div>
       </div>
   </div>
-</section><!-- End Character Sentiment Section -->
+</section><!-- End Character Word Cloud Section -->
 
 
   </main><!-- End #main -->

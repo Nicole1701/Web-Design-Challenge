@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Rapid Bootstrap Template</title>
+  <title>The Office: An Analysis</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -37,51 +37,69 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-none d-lg-flex align-items-end fixed-top ">
-    <div class="container d-flex justify-content-end">
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-  </div>
-
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">Rapid</a></h1>
+      <h1 class="logo mr-auto"><a href="index.html">The Office</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="main-nav d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li><a href="index.html#about">Project</a></li>
+          <li><a href="index.html#visualization">Visualizations</a></li>
+          <li class="drop-down"><a href="#">Comparison</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+                  <li><a href="comparison.html">Ranking Comparison</a></li>
+                  <li><a href="#compbox">Outlier Comparison</a></li>
+                  <li><a href="#compdialogue">Dialogue Comparison</a></li>
+                  <li><a href="#compchardialogue">Character Dialogue Comparison</a></li>
+                  <li><a href="#csentiment">Sentiment Comparison</a></li>
+                  <li><a href="#compcloud">Word Cloud Comparison</a></li>
             </ul>
           </li>
-          <li><a href="#footer">Contact Us</a></li>
+          <li class="drop-down"><a href="#">Plots</a>
+            <ul>
+              <li class="drop-down"><a href="rating.html">Rating</a>
+                <ul>
+                  <li><a href="rating.html">Season Rating</a></li>
+                  <li><a href="#episode">Episode Rankings</a></li>
+                  <li><a href="#sbox">Series Outliers</a></li>
+                  <li><a href="#eboxplot">Episode Outliers</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="dialogue.html">Dialogue</a>
+                <ul>
+                  <li><a href="dialogue.html#odialogue">Overall Dialogue</a></li>
+                  <li><a href="dialogue.html#sdialogue">Season Dialogue</a></li>
+                  <li><a href="dialogue.html#cdialogue">Character Dialogue</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="sentiment.html">Sentiment</a>
+                <ul>
+                  <li><a href="sentiment.html#ssentiment">Overall Sentiment</a></li>
+                  <li><a href="sentiment.html#csentiment">Character Sentiment</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a href="wordcloud.html">Word Cloud</a>
+                <ul>
+                  <li><a href="wordcloud.html#ocloud">Overall Word Cloud</a></li>
+                  <li><a href="wordcloud.html#ccloud">Character Word Cloud</a></li>
+                </ul>
+              </li>
+            </ul>
+          <li>  
+            <ul>
+              <li class="drop-down"><a href="#">Data Sets</a>
+                <ul>
+                  <li><a href="ratingsdata.html">Ratings Data</a></li>
+                  <li><a href="dialoguedata.html">Dialogue Data</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav><!-- .main-nav-->
 
@@ -96,162 +114,642 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Inner Page</li>
+          <li>Comparison</li>
         </ol>
-        <h2>Inner Page</h2>
+        <h2>Comparison</h2>
+        <p>“I wish there was a way to know you’re in the good old days, before you’ve actually left them.” – Andy Bernard
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page pt-4">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
+  <!-- ======= Comparison Rankings Section ======= -->
+<section id="compranking" class="compranking">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h3>Ranking Charts</h3>
+    </header>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season Ranking</h4>
+          <a href = "images/season_rankings.png" target=_blank><img src = "images/season_rankings.png" class="img-fluid" alt="Rankings of The Office Seasons"></a>
+        </div>
       </div>
-    </section>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Episode Ranking</h4>
+          <a href = "images/episode_rankings.png" target=_blank><img src = "images/episode_rankings.png" class="img-fluid" alt="Rankings of the top 15 Office Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 1</h4>
+          <a href = "images/s1_ep_rankings.png" target=_blank><img src = "images/s1_ep_rankings.png" class="img-fluid" alt="Season 1 Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 2</h4>
+          <a href = "images/s2_ep_rankings.png" target=_blank><img src = "images/s2_ep_rankings.png" class="img-fluid" alt="Season 2 Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 3</h4>
+          <a href = "images/s3_ep_rankings.png" target=_blank><img src = "images/s3_ep_rankings.png" class="img-fluid" alt="Season 3 Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 4</h4>
+          <a href = "images/s4_ep_rankings.png" target=_blank><img src = "images/s4_ep_rankings.png" class="img-fluid" alt="Season 4 Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 5</h4>
+          <a href = "images/s5_ep_rankings.png" target=_blank><img src = "images/s5_ep_rankings.png" class="img-fluid" alt="Season 5 Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 6</h4>
+          <a href = "images/s6_ep_rankings.png" target=_blank><img src = "images/s6_ep_rankings.png" class="img-fluid" alt="Season 6 Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 7</h4>
+          <a href = "images/s7_ep_rankings.png" target=_blank><img src = "images/s7_ep_rankings.png" class="img-fluid" alt="Season 7Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 8</h4>
+          <a href = "images/s1_ep_rankings.png" target=_blank><img src = "images/s8_ep_rankings.png" class="img-fluid" alt="Season 8 Top 5 Episodes"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 9</h4>
+          <a href = "images/s9_ep_rankings.png" target=_blank><img src = "images/s9_ep_rankings.png" class="img-fluid" alt="Season 9 Top 5 Episodes"></a>
+        </div>
+      </div>
+     
+      </div>
+  </div>
+</section><!-- Ranking Comparison Section -->
+
+  <!-- ======= Comparison Box Plot Section ======= -->
+  <section id="compbox" class="compbox section-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <header class="section-header">
+        <h3>Episode Outliers</h3>
+      </header>
+  
+      <div class="row">
+  
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 1</h4>
+            <a href = "images/rating_by_season.png" target=_blank><img src = "images/rating_by_season.png" class="img-fluid" alt="The Office Episode Box Plot"></a>
+          </div>
+        </div><div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 1</h4>
+            <a href = "images/boxplot_s1.png" target=_blank><img src = "images/boxplot_s1.png" class="img-fluid" alt="Season 1 Episode Box Plot"></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 2</h4>
+            <a href = "images/boxplot_s2.png" target=_blank><img src = "images/boxplot_s2.png" class="img-fluid" alt="Season 2 Episode Box Plot"></a>
+          </div>
+        </div>
+  
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 3</h4>
+            <a href = "images/boxplot_s3.png" target=_blank><img src = "images/boxplot_s3.png" class="img-fluid" alt="Season 3 Episode Box Plot"></a>
+           </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 4</h4>
+            <a href = "images/boxplot_s4.png" target=_blank><img src = "images/boxplot_s4.png" class="img-fluid" alt="Season 4 Episode Box Plot"></a>
+           </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 5</h4>
+            <a href = "images/boxplot_s5.png" target=_blank><img src = "images/boxplot_s5.png" class="img-fluid" alt="Season 5 Episode Box Plot"></a>
+           </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 6</h4>
+            <a href = "images/boxplot_s6.png" target=_blank><img src = "images/boxplot_s6.png" class="img-fluid" alt="Season 6 Episode Box Plot"></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 7</h4>
+            <a href = "images/boxplot_s7.png" target=_blank><img src = "images/boxplot_s7.png" class="img-fluid" alt="Season 1 Episode Box Plot"></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 8</h4>
+            <a href = "images/boxplot_s8.png" target=_blank><img src = "images/boxplot_s8.png" class="img-fluid" alt="Season 8 Episode Box Plot"></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="box">
+            <h4 class="title">Season 9</h4>
+            <a href = "images/boxplot_s9.png" target=_blank><img src = "images/boxplot_s9.png" class="img-fluid" alt="Season 9 Episode Box Plot"></a>         
+          </div>
+        </div>
+    </div>
+  </section><!-- End Comparison Box Plot Section -->
+
+ <!-- ======= Comparison Dialogue Section ======= -->
+ <section id="compdialogue" class="compdialogueg">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h3>Season Dialogue Comparison</h3>
+    </header>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Series Top Speakers</h4>
+          <a href = "images/top_speakers.png" target=_blank><img src = "images/top_speakers.png" class="img-fluid" alt="The Office: Top Speakers"></a>
+        </div>
+      </div><div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 1</h4>
+          <a href = "images/s1_speakers.png" target=_blank><img src = "images/s1_speakers.png" class="img-fluid" alt="Season 1 Top 10 Speakers"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 2</h4>
+          <a href = "images/s2_speakers.png" target=_blank><img src = "images/s2_speakers.png" class="img-fluid" alt="Season 2 Top 10 Speakers"></a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 3</h4>
+          <a href = "images/s3_speakers.png" target=_blank><img src = "images/s3_speakers.png" class="img-fluid" alt="Season 3 Top 10 Speakers"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 4</h4>
+          <a href = "images/s4_speakers.png" target=_blank><img src = "images/s4_speakers.png" class="img-fluid" alt="Season 4 Top 10 Speakers"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 5</h4>
+          <a href = "images/s5_speakers.png" target=_blank><img src = "images/s5_speakers.png" class="img-fluid" alt="Season 5 Top 10 Speakers"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 6</h4>
+          <a href = "images/s6_speakers.png" target=_blank><img src = "images/s6_speakers.png" class="img-fluid" alt="Season 6 Top 10 Speakers"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 7</h4>
+          <a href = "images/s7_speakers.png" target=_blank><img src = "images/s7_speakers.png" class="img-fluid" alt="Season 7 Top 10 Speakers"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 8</h4>
+          <a href = "images/s8_speakers.png" target=_blank><img src = "images/s8_speakers.png" class="img-fluid" alt="Season 8 Top 10 Speakers"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season 9</h4>
+          <a href = "images/s9_speakers.png" target=_blank><img src = "images/s9_speakers.png" class="img-fluid" alt="Season 9 Top 10 Speakers"></a>
+        </div>
+      </div>
+  </div>
+</section><!-- End Season Dialogue Section -->
+
+
+<!-- ======= Character Dialogue Section ======= -->
+<section id="compchardialogue" class="compchardialogue section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h3>Dialogue by Character</h3>
+    </header>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Michael</h4>
+          <a href = "images/michael_lines.png" target=_blank><img src = "images/michael_lines.png" class="img-fluid" alt="Michael Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Dwight</h4>
+          <a href = "images/dwight_lines.png" target=_blank><img src = "images/dwight_lines.png" class="img-fluid" alt="Dwight Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Jim</h4>
+          <a href = "images/jim_lines.png" target=_blank><img src = "images/jim_lines.png" class="img-fluid" alt="Jim Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Pam</h4>
+          <a href = "images/pam_lines.png" target=_blank><img src = "images/pam_lines.png" class="img-fluid" alt="Pam Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Andy</h4>
+          <a href = "images/andy_lines.png" target=_blank><img src = "images/andy_lines.png" class="img-fluid" alt="Andy Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Angela</h4>
+          <a href = "images/angela_lines.png" target=_blank><img src = "images/angela_lines.png" class="img-fluid" alt="Angela Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Kevin</h4>
+          <a href = "images/kevin_lines.png" target=_blank><img src = "images/kevin_lines.png" class="img-fluid" alt="Kevin Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Erin</h4>
+          <a href = "images/erin_lines.png" target=_blank><img src = "images/erin_lines.png" class="img-fluid" alt="Erin Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Oscar</h4>
+          <a href = "images/oscar_lines.png" target=_blank><img src = "images/oscar_lines.png" class="img-fluid" alt="Oscar Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Ryan</h4>
+          <a href = "images/ryan_lines.png" target=_blank><img src = "images/ryan_lines.png" class="img-fluid" alt="Ryan Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Darryl</h4>
+          <a href = "images/darryl_lines.png" target=_blank><img src = "images/darryl_lines.png" class="img-fluid" alt="Darryl Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Phyllis</h4>
+          <a href = "images/phyllis_lines.png" target=_blank><img src = "images/phyllis_lines.png" class="img-fluid" alt="Phyllis Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Kelly</h4>
+          <a href = "images/kelly_lines.png" target=_blank><img src = "images/kelly_lines.png" class="img-fluid" alt="Kelly Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Toby</h4>
+          <a href = "images/toby_lines.png" target=_blank><img src = "images/toby_lines.png" class="img-fluid" alt="Toby Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Meredith</h4>
+          <a href = "images/meredith_lines.png" target=_blank><img src = "images/meredith_lines.png" class="img-fluid" alt="Meredith Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Stanley</h4>
+          <a href = "images/stanley_lines.png" target=_blank><img src = "images/stanley_lines.png" class="img-fluid" alt="Stanley Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Creed</h4>
+          <a href = "images/creed_lines.png" target=_blank><img src = "images/creed_lines.png" class="img-fluid" alt="Creed Dialogue Over Time"></a>
+        </div>
+      </div>
+  </div>
+</section><!-- End Character Dialogue Section -->
+
+
+<!-- ======= Character Sentiment Section ======= -->
+<section id="csentiment" class="csentiment">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h3>Sentiment Comparison</h3>
+    </header>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Season Sentiment Ranking</h4>
+          <a href = "images/season_sentiment.png" target=_blank><img src = "images/season_sentiment.png" class="img-fluid" alt="Sentiment Ranking of The Office Seasons"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Character Polarity Ranking</h4>
+          <a href = "images/character_sentiment.png" target=_blank><img src = "images/character_sentiment.png" class="img-fluid" alt="Character Polarity Ranking"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Michael</h4>
+          <a href = "images/michael_sentiment.png" target=_blank><img src = "images/michael_sentiment.png" class="img-fluid" alt="Michael Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Dwight</h4>
+          <a href = "images/dwight_sentiment.png" target=_blank><img src = "images/dwight_sentiment.png" class="img-fluid" alt="Dwight Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Jim</h4>
+          <a href = "images/jim_sentiment.png" target=_blank><img src = "images/jim_sentiment.png" class="img-fluid" alt="Jim Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Pam</h4>
+          <a href = "images/pam_sentiment.png" target=_blank><img src = "images/pam_sentiment.png" class="img-fluid" alt="Pam Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Andy</h4>
+          <a href = "images/andy_sentiment.png" target=_blank><img src = "images/andy_sentiment.png" class="img-fluid" alt="Andy Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Angela</h4>
+          <a href = "images/angela_sentiment.png" target=_blank><img src = "images/angela_sentiment.png" class="img-fluid" alt="Angela Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Kevin</h4>
+          <a href = "images/kevin_sentiment.png" target=_blank><img src = "images/kevin_sentiment.png" class="img-fluid" alt="Kevin Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Erin</h4>
+          <a href = "images/erin_sentiment.png" target=_blank><img src = "images/erin_sentiment.png" class="img-fluid" alt="Erin Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Oscar</h4>
+          <a href = "images/oscar_sentiment.png" target=_blank><img src = "images/oscar_sentiment.png" class="img-fluid" alt="Oscar Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Ryan</h4>
+          <a href = "images/ryan_sentiment.png" target=_blank><img src = "images/ryan_sentiment.png" class="img-fluid" alt="Ryan Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Darryl</h4>
+          <a href = "images/darryl_sentiment.png" target=_blank><img src = "images/darryl_sentiment.png" class="img-fluid" alt="Darryl Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Phyllis</h4>
+          <a href = "images/phyllis_sentiment.png" target=_blank><img src = "images/phyllis_sentiment.png" class="img-fluid" alt="Phyllis Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Kelly</h4>
+          <a href = "images/kelly_sentiment.png" target=_blank><img src = "images/kelly_sentiment.png" class="img-fluid" alt="Kelly Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Toby</h4>
+          <a href = "images/toby_sentiment.png" target=_blank><img src = "images/toby_sentiment.png" class="img-fluid" alt="Toby Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Meredith</h4>
+          <a href = "images/meredith_sentiment.png" target=_blank><img src = "images/meredith_sentiment.png" class="img-fluid" alt="Meredith Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Stanley</h4>
+          <a href = "images/stanley_sentiment.png" target=_blank><img src = "images/stanley_sentiment.png" class="img-fluid" alt="Stanley Sentiment by Season"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Creed</h4>
+          <a href = "images/creed_sentiment.png" target=_blank><img src = "images/creed_sentiment.png" class="img-fluid" alt="Creed Sentiment by Season"></a>
+        </div>
+      </div>
+  </div>
+</section><!-- End Character Sentiment Section -->
+
+<!-- ======= Character Sentiment Section ======= -->
+<section id="compcloud" class="compcloud section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h3>Word Cloud Comparison</h3>
+     </header>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Series Word Cloud</h4>
+          <a href = "images/word_cloud_all.png" target=_blank><img src = "images/word_cloud_all.png" class="img-fluid" alt="Series Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Michael</h4>
+          <a href = "images/word_cloud_michael.png" target=_blank><img src = "images/word_cloud_michael.png" class="img-fluid" alt="Michael Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Dwight</h4>
+          <a href = "images/word_cloud_dwight.png" target=_blank><img src = "images/word_cloud_dwight.png" class="img-fluid" alt="Dwight Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Jim</h4>
+          <a href = "images/word_cloud_jim.png" target=_blank><img src = "images/word_cloud_jim.png" class="img-fluid" alt="Jim Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Pam</h4>
+          <a href = "images/word_cloud_pam.png" target=_blank><img src = "images/word_cloud_pam.png" class="img-fluid" alt="Pam Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Andy</h4>
+          <a href = "images/word_cloud_andy.png" target=_blank><img src = "images/word_cloud_andy.png" class="img-fluid" alt="Andy Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Angela</h4>
+          <a href = "images/word_cloud_angela.png" target=_blank><img src = "images/word_cloud_angela.png" class="img-fluid" alt="Angela Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Kevin</h4>
+          <a href = "images/word_cloud_kevin.png" target=_blank><img src = "images/word_cloud_kevin.png" class="img-fluid" alt="Kevin Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Erin</h4>
+          <a href = "images/word_cloud_erin.png" target=_blank><img src = "images/word_cloud_erin.png" class="img-fluid" alt="Erin Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Oscar</h4>
+          <a href = "images/word_cloud_oscar.png" target=_blank><img src = "images/word_cloud_oscar.png" class="img-fluid" alt="Oscar Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Ryan</h4>
+          <a href = "images/word_cloud_ryan.png" target=_blank><img src = "images/word_cloud_ryan.png" class="img-fluid" alt="Ryan Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Darryl</h4>
+          <a href = "images/word_cloud_darryl.png" target=_blank><img src = "images/word_cloud_darryl.png" class="img-fluid" alt="Darryl Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Phyllis</h4>
+          <a href = "images/word_cloud_phyllis.png" target=_blank><img src = "images/word_cloud_phyllis.png" class="img-fluid" alt="Phyllis Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Kelly</h4>
+          <a href = "images/word_cloud_kelly.png" target=_blank><img src = "images/word_cloud_kelly.png" class="img-fluid" alt="Kelly Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Toby</h4>
+          <a href = "images/word_cloud_toby.png" target=_blank><img src = "images/word_cloud_toby.png" class="img-fluid" alt="Toby Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Meredith</h4>
+          <a href = "images/word_cloud_meredith.png" target=_blank><img src = "images/word_cloud_meredith.png" class="img-fluid" alt="Meredith Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Stanley</h4>
+          <a href = "images/word_cloud_stanley.png" target=_blank><img src = "images/word_cloud_stanley.png" class="img-fluid" alt="Stanley Word Cloud"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Creed</h4>
+          <a href = "images/word_cloud_creed.png" target=_blank><img src = "images/word_cloud_creed.png" class="img-fluid" alt="Creed Word Cloud"></a>
+        </div>
+      </div>
+  </div>
+</section><!-- End Character Sentiment Section -->
+
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="section-bg">
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6">
-
-            <div class="row">
-
-              <div class="col-sm-6">
-
-                <div class="footer-info">
-                  <h3>Rapid</h3>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                </div>
-
-                <div class="footer-newsletter">
-                  <h4>Our Newsletter</h4>
-                  <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
-                  <form action="" method="post">
-                    <input type="email" name="email"><input type="submit" value="Subscribe">
-                  </form>
-                </div>
-
-              </div>
-
-              <div class="col-sm-6">
-                <div class="footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                  </ul>
-                </div>
-
-                <div class="footer-links">
-                  <h4>Contact Us</h4>
-                  <p>
-                    A108 Adam Street <br>
-                    New York, NY 535022<br>
-                    United States <br>
-                    <strong>Phone:</strong> +1 5589 55488 55<br>
-                    <strong>Email:</strong> info@example.com<br>
-                  </p>
-                </div>
-
-                <div class="social-links">
-                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="form">
-
-              <h4>Send us a message</h4>
-              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
-
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validate"></div>
-                </div>
-
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-              </form>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
+ <!-- ======= Footer ======= -->
+<footer id="footer" class="footer-alt">
+  <div class="container">
+    <div class="copyright">
+      Data Analysis by <strong>Nicole Cook</strong>
     </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+    <div class="credits">
+      <!--
+      All the links in the footer should remain intact.
+      You can delete the links only if you purchased the pro version.
+      Licensing information: https://bootstrapmade.com/license/
+      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+    -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
     </div>
-  </footer><!-- End  Footer -->
+  </div>
+</footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/counterup/counterup.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
