@@ -2,7 +2,7 @@
 # Web Visualization Dashboard
 Click here to got to the website: [The Office: An Analysis](https://nicole1701.github.io/web-design-challenge/WebVisualizations/index.html)
 
-![The Office](WebVisualization/images/office_logo_2.png)
+![The Office](/images/office_logo_2.png)
 
 
 ### Website Requirements
