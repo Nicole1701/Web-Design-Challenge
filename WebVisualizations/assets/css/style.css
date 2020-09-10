@@ -725,6 +725,17 @@ section {
   text-align: left;
 }
 
+/* Season Box Plot
+--------------------------------*/
+#sbox {
+  padding: 80px 0;
+}
+
+#sbox h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
 /* Episode Box Plot Section
 --------------------------------*/
 #eboxplot {
@@ -760,6 +771,76 @@ section {
   text-align: center;
 }
 
+/* Overall Dialogue Section
+--------------------------------*/
+#odialogue {
+  padding: 60px 0 40px 0;
+}
+
+#odialogue .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#odialogue .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#odialogue .title a {
+  color: #111;
+}
+
+#odialogue .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Season Dialogue Section
+--------------------------------*/
+#sdialogue {
+  padding: 60px 0 40px 0;
+}
+
+#sdialogue .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#sdialogue .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#sdialogue .title a {
+  color: #111;
+}
+
+#sdialogue .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
 /* Character Dialogue Section
 --------------------------------*/
 #cdialogue {
@@ -789,6 +870,76 @@ section {
 }
 
 #cdialogue .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Season Sentiment Section
+--------------------------------*/
+#ssentiment {
+  padding: 60px 0 40px 0;
+}
+
+#ssentiment .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#ssentiment .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#ssentiment .title a {
+  color: #111;
+}
+
+#ssentiment .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Character Sentiment Section
+--------------------------------*/
+#csentiment {
+  padding: 60px 0 40px 0;
+}
+
+#csentiment .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#csentiment .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#csentiment .title a {
+  color: #111;
+}
+
+#csentiment .description {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
@@ -897,17 +1048,6 @@ section {
 }
 
 /* Features Section
---------------------------------*/
-#features {
-  padding: 80px 0;
-}
-
-#features h4 {
-  font-weight: 600;
-  font-size: 24px;
-}
-
-/* Season Ranking Section
 --------------------------------*/
 #features {
   padding: 80px 0;

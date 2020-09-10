@@ -53,8 +53,19 @@
           <li><a href="comparison.html">Comparison</a></li>
           <li class="drop-down"><a href="#">Plots</a>
             <ul>
-              <li><a href="rating.html">Rating</a></li>
-              <li><a href="dialogue.html">Dialogue</a></li>
+              <li class="drop-down"><a href="rating.html">Rating</a>
+              <ul>
+                <li><a href="rating.html#srating">Season Rating</a></li>
+                <li><a href="rating.html#episode">Episode Rankings</a></li>
+                <li><a href="rating.html#sbox">Series Outliers</a></li>
+                <li><a href="rating.html#eboxplot"">Episode Outliers</a></li>
+              </ul>
+              <li class="drop-down"><a href="dialogue.html">Dialogue</a>
+                <ul>
+                  <li><a href="#odialogue">Overall Dialogue</a></li>
+                  <li><a href="#sdialogue">Season Dialogue</a></li>
+                  <li><a href="#cdialogue">Character Dialogue</a></li>
+                </ul>
               <li><a href="sentiment.html">Sentiment</a></li>
               <li><a href="wordcloud.html">Word Cloud</a></li>
             </ul>
@@ -88,8 +99,8 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-  <!-- ======= Season Ranking Section ======= -->
-  <section id="sranking" class="sranking">
+  <!-- ======= Season Dialogue Section ======= -->
+  <section id="odialogue" class="odialogue">
     <div class="container" data-aos="fade-up">
 
       <div class="row feature-item">
@@ -98,17 +109,17 @@
         </div>
         <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
           <h4>Michael has 37% more dialogue over the course of the series than the next highest speaker.</h4>
-          <p>It makes sense that over the entire series that Michael Scott would have the most dialogue.</p>
+          <p>It makes sense that over the entire series that Michael Scott would have the most dialogue as the show focuses solidly on his antics as the boss of Dunder Mifflin.</p>
           <p>Following him are Dwight, Jim and Pam, who are also a major focus of many story lines.</p>
-          <p>Recurring characters who have fewer lines include Erin, Oscar and Ryan. Other characters like Darryl (1160), Phyllis (966), Kelly (822) don't even break the top 10.</p>
+          <p>Recurring characters who have fewer lines include Erin, Oscar and Ryan. Other characters like Darryl (1160), Phyllis (966), Kelly (822), even though the were a precense throughout the entire seiers, don't even break the top 10.</p>
         </div>
       </div>
 
     </div>
-  </section><!-- End Season Ranking Section --> 
+  </section><!-- End Season Dialogue Section --> 
 
- <!-- ======= Dialogue by Season Section ======= -->
- <section id="cdialogue" class="cdialogue section-bg">
+ <!-- ======= Season Dialogue Section ======= -->
+ <section id="sdialogue" class="sdialogue section-bg">
   <div class="container" data-aos="fade-up">
 
     <header class="section-header">
@@ -175,10 +186,10 @@
         </div>
       </div>
   </div>
-</section><!-- End Dialogue by Season Section -->
+</section><!-- End Season Dialogue Section -->
 
 
-<!-- ======= Dialogue by Character Section ======= -->
+<!-- ======= Character Dialogue Section ======= -->
 <section id="cdialogue" class="cdialogue">
   <div class="container" data-aos="fade-up">
 
@@ -273,8 +284,20 @@
           <a href = "images/toby_lines.png" target=_blank><img src = "images/toby_lines.png" class="img-fluid" alt="Toby Dialogue Over Time"></a>
         </div>
       </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Meredith</h4>
+          <a href = "images/meredith_lines.png" target=_blank><img src = "images/meredith_lines.png" class="img-fluid" alt="Meredith Dialogue Over Time"></a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="box">
+          <h4 class="title">Stanley</h4>
+          <a href = "images/stanley_lines.png" target=_blank><img src = "images/stanley_lines.png" class="img-fluid" alt="Stanley Dialogue Over Time"></a>
+        </div>
+      </div>
   </div>
-</section><!-- End Dialogue by Character Section -->
+</section><!-- End Character Dialogue Section -->
 
 
   </main><!-- End #main -->
