@@ -946,6 +946,77 @@ section {
   text-align: left;
 }
 
+/* Season Word Cloud Section
+--------------------------------*/
+#ocloud {
+  padding: 60px 0 40px 0;
+}
+
+#ocloud .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#ocloud .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#ocloud .title a {
+  color: #111;
+}
+
+#ocloud .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Character World Cloud Section
+--------------------------------*/
+#ccloud {
+  padding: 60px 0 40px 0;
+}
+
+#ccloud .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#ccloud .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#ccloud .title a {
+  color: #111;
+}
+
+#ccloud .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+
 /* Why Us Section
 --------------------------------*/
 #why-us {
